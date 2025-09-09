@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - UMKMbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="logo">UMKMbot</div>
+            <label for="menu-toggle" class="overlay"></label>
+            <div class="sidebar">
+                <label for="menu-toggle" class="close-btn">✖</label>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="transaksi.html" class="active">Transaksi</a></li>
+                    <li><a href="penarikan.html">Penarikan</a></li>
+                    <li><a href="rekap.html">Rekap</a></li>
+                    <li><a href="konfigurasi.html">Konfigurasi</a></li>
+                    <li><a href="pengaturan.html">Pengaturan</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="transaksi fade-in">
+            <h1>Riwayat Transaksi</h1>
+            <p>Lihat dan kelola transaksi penjualan melalui chatbot WhatsApp.</p>
+            <div class="transaksi-list">
+                <h2>Daftar Transaksi</h2>
+                <table class="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-09-08</td>
+                            <td>Batik Modern</td>
+                            <td>Rp 150.000</td>
+                            <td>Sukses</td>
+                            <td><a href="#" class="action-btn">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>2025-09-07</td>
+                            <td>Keripik Tempe</td>
+                            <td>Rp 25.000</td>
+                            <td>Pending</td>
+                            <td><a href="#" class="action-btn">Detail</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UMKMbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

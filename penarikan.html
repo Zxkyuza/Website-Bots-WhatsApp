@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penarikan - UMKMbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="logo">UMKMbot</div>
+            <label for="menu-toggle" class="overlay"></label>
+            <div class="sidebar">
+                <label for="menu-toggle" class="close-btn">✖</label>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="penarikan.html" class="active">Penarikan</a></li>
+                    <li><a href="rekap.html">Rekap</a></li>
+                    <li><a href="konfigurasi.html">Konfigurasi</a></li>
+                    <li><a href="pengaturan.html">Pengaturan</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="penarikan fade-in">
+            <h1>Penarikan Dana</h1>
+            <p>Ajukan penarikan dana dari hasil penjualan Anda.</p>
+            <div class="penarikan-form">
+                <h2>Ajukan Penarikan</h2>
+                <form>
+                    <label for="amount">Jumlah Penarikan (Rp)</label><br/>
+                    <input type="number" id="amount" placeholder="Masukkan jumlah" required><br/><br/>
+                    <label for="bank">Metode Pembayaran</label><br/>
+                    <select id="bank" required>
+                        <option value="" disabled selected>Pilih metode pembayaran</option>
+                        <option value="qris">QRIS</option>
+                        <option value="bank">Transfer Bank</option>
+                    </select><br/><br/>
+                    <label for="account-number">Nomor Rekening</label><br/>
+                    <input type="text" id="account-number" placeholder="Masukkan nomor rekening" required><br/><br/>
+                    <button type="submit" class="btn pulse">Ajukan Penarikan</button>
+                </form>
+            </div>
+            <div class="penarikan-history">
+                <h2>Riwayat Penarikan</h2>
+                <table class="penarikan-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Jumlah</th>
+                            <th>Metode</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-09-07</td>
+                            <td>Rp 500.000</td>
+                            <td>QRIS</td>
+                            <td>Sukses</td>
+                        </tr>
+                        <tr>
+                            <td>2025-09-06</td>
+                            <td>Rp 300.000</td>
+                            <td>Transfer Bank</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UMKMbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

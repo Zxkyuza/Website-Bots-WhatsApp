@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfigurasi - UMKMbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="logo">UMKMbot</div>
+            <label for="menu-toggle" class="overlay"></label>
+            <div class="sidebar">
+                <label for="menu-toggle" class="close-btn">✖</label>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="penarikan.html">Penarikan</a></li>
+                    <li><a href="rekap.html">Rekap</a></li>
+                    <li><a href="konfigurasi.html" class="active">Konfigurasi</a></li>
+                    <li><a href="pengaturan.html">Pengaturan</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="konfigurasi fade-in">
+            <h1>Konfigurasi Chatbot WhatsApp</h1>
+            <p>Atur nomor WhatsApp untuk integrasi dengan chatbot penjualan otomatis.</p>
+            <div class="konfigurasi-form">
+                <h2>Konfigurasi Chatbot</h2>
+                <form>
+                    <label for="whatsapp-number">Nomor WhatsApp</label><br/>
+                    <input type="tel" id="whatsapp-number" placeholder="+6281234567890" required><br/><br/>
+                    <label for="bot-name">Nama Chatbot</label><br/>
+                    <input type="text" id="bot-name" placeholder="Masukkan nama chatbot" required><br/><br/>
+                    <label for="welcome-message">Pesan Selamat Datang</label><br/>
+                    <textarea id="welcome-message" placeholder="Tulis pesan selamat datang untuk pelanggan" required></textarea><br/><br/>
+                    <button type="submit" class="btn pulse">Simpan Konfigurasi</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UMKMbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

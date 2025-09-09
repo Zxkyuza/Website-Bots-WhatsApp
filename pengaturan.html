@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan - UMKMbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="logo">UMKMbot</div>
+            <label for="menu-toggle" class="overlay"></label>
+            <div class="sidebar">
+                <label for="menu-toggle" class="close-btn">✖</label>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="penarikan.html">Penarikan</a></li>
+                    <li><a href="rekap.html">Rekap</a></li>
+                    <li><a href="konfigurasi.html">Konfigurasi</a></li>
+                    <li><a href="pengaturan.html" class="active">Pengaturan</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pengaturan fade-in">
+            <h1>Pengaturan Akun</h1>
+            <p>Atur informasi akun, password, dan metode pembayaran Anda.</p>
+            
+            <!-- Form 1: Ganti Foto dan Nama Pengguna -->
+            <div class="pengaturan-form">
+                <h2>Ganti Foto dan Nama Pengguna</h2>
+                <form>
+                    <label for="username">Nama Pengguna</label><br/>
+                    <input type="text" id="username" placeholder="Masukkan nama pengguna baru" required><br/><br/>
+                    <label for="profile-photo">Foto Profil</label><br/>
+                    <input type="file" id="profile-photo" accept="image/*"><br/><br/>
+                    <button type="submit" class="btn pulse">Simpan</button>
+                </form>
+            </div>
+            
+            <!-- Form 2: Ganti Password -->
+            <div class="pengaturan-form">
+                <h2>Ganti Password</h2>
+                <form>
+                    <label for="old-password">Password Lama</label><br/>
+                    <input type="password" id="old-password" placeholder="Masukkan password lama" required><br/><br/>
+                    <label for="new-password">Password Baru</label><br/>
+                    <input type="password" id="new-password" placeholder="Masukkan password baru" required><br/><br/>
+                    <label for="confirm-password">Konfirmasi Password Baru</label><br/>
+                    <input type="password" id="confirm-password" placeholder="Masukkan password baru lagi" required><br/><br/>
+                    <button type="submit" class="btn pulse">Simpan</button>
+                </form>
+            </div>
+            
+            <!-- Form 3: Metode Pembayaran -->
+            <div class="pengaturan-form">
+                <h2>Metode Pembayaran</h2>
+                <form>
+                    <label for="payment-method">Pilih Metode Pembayaran</label><br/>
+                    <select id="payment-method" required>
+                        <option value="" disabled selected>Pilih metode pembayaran</option>
+                        <option value="qris">QRIS</option>
+                        <option value="bank">Transfer Bank</option>
+                    </select><br/><br/>
+                    <label for="account-number">Nomor Rekening</label><br/>
+                    <input type="text" id="account-number" placeholder="Masukkan nomor rekening" required><br/><br/>
+                    <button type="submit" class="btn pulse">Simpan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UMKMbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

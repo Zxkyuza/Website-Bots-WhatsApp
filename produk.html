@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - UMKMbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+            <div class="logo">UMKMbot</div>
+            <label for="menu-toggle" class="overlay"></label>
+            <div class="sidebar">
+                <label for="menu-toggle" class="close-btn">✖</label>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="produk.html" class="active">Produk</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="penarikan.html">Penarikan</a></li>
+                    <li><a href="rekap.html">Rekap</a></li>
+                    <li><a href="konfigurasi.html">Konfigurasi</a></li>
+                    <li><a href="pengaturan.html">Pengaturan</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="produk fade-in">
+            <h1>Kelola Produk</h1>
+            <p>Tambahkan dan kelola produk yang akan dijual melalui chatbot WhatsApp.</p>
+            <div class="product-form">
+                <h2>Tambah Produk</h2>
+                <form>
+                    <label for="product-name">Nama Produk</label><br/>
+                    <input type="text" id="product-name" placeholder="Masukkan nama produk" required><br/><br/>
+                    <label for="price">Harga (Rp)</label><br/>
+                    <input type="number" id="price" placeholder="Masukkan harga" required><br/><br/>
+                    <label for="description">Deskripsi</label><br/>
+                    <textarea id="description" placeholder="Deskripsi produk" required></textarea><br/><br/>
+                    <label for="image">Gambar Produk</label><br/>
+                    <input type="file" id="image" accept="image/*"><br/><br/>
+                    <button type="submit" class="btn pulse">Tambah Produk</button>
+                </form>
+            </div>
+            <div class="product-list">
+                <h2>Daftar Produk</h2>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>Nama Produk</th>
+                            <th>Harga</th>
+                            <th>Deskripsi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Batik Modern</td>
+                            <td>Rp 150.000</td>
+                            <td>Batik motif modern, cocok untuk acara formal</td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Keripik Tempe</td>
+                            <td>Rp 25.000</td>
+                            <td>Keripik tempe renyah, rasa pedas manis</td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Hapus</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UMKMbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
