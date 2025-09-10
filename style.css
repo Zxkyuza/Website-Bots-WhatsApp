@@ -86,7 +86,7 @@ nav {
     width: 300px;
     height: 100%;
     background: linear-gradient(to bottom, #1e293b, #0f172a, #3b82f6);
-    padding: 6rem 2rem 2rem;
+    padding: 4rem 2rem 2rem;
     transition: left 0.4s ease;
     box-shadow: 2px 0 16px rgba(0, 0, 0, 0.3);
     z-index: 1000;
@@ -892,4 +892,5 @@ footer p {
         font-size: 0.9rem;
     }
 }
+
 
